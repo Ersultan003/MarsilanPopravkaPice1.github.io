@@ -1,0 +1,139 @@
+//main:..//style.less
+.b4 {
+    padding: 90px 0;
+    text-align: center;
+
+    .b4__header {
+        width: 800px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+
+        h2 {
+            color: @blue;
+            font-size: 40px;
+            line-height: 48px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 20px;
+
+            strong {
+                font-family: "MuseoSansBlack";
+            }
+        }
+    }
+
+    .b4__wrapper {
+        display: grid;
+        -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 1200px;
+        margin: auto;
+
+        .b4__item {
+            width: 250px;
+            margin: 30px 0;
+
+            .b4__picture {
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: @blue;
+                font-family: "MuseoSansBlack";
+            }
+        }
+    }
+}
+
+@media (max-width:1440px) {
+    .b4 {
+        .container {
+            max-width: 1300px;
+        }
+    }
+}
+
+
+@media (max-width:1024px) {
+    .b4 {
+        .container {
+            max-width: 800px;
+        }
+
+        .b4__wrapper {
+            -ms-grid-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            width: 600px;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .b4 {
+        .b4__header {
+            width: 600px;
+        }
+
+        .b4__wrapper {
+            width: 300px;
+            -ms-grid-columns: 1fr;
+            grid-template-columns: 1fr;
+        }
+    }
+}
+@media (max-width:451px) {
+    .b4 {
+        padding: 30px 0;
+
+        .b4__header {
+            width: 400px;
+        }
+
+        .b4__wrapper {
+            width: 250px;
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .b4 {
+        padding: 30px 0;
+
+        .b4__header {
+            width: 400px;
+        }
+
+        .b4__wrapper {
+            width: 250px;
+        }
+    }
+}
+
+
+
+@media (max-width:375px) {
+    .b4 {
+
+
+        .b4__header {
+            width: 350px;
+
+            h2 {
+                font-size: 35px;
+            }
+        }
+
+
+    }
+}
+
+
+@media (max-width:425px) {
+    .b4 {
+        .b4__header {
+            width: 280px;
+        }
+    }
+}

@@ -1,0 +1,104 @@
+// main: ..//style.less
+.b5 {
+    background: url(.././images/dest/b5bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    color: @white;
+
+    .b5__wrapper {
+        width: 700px;
+        margin: 100px auto;
+        text-align: center;
+
+        h2 {
+            font-size: 40px;
+            line-height: 48px;
+            margin-bottom: 10px;
+            font-family: "MuseoSansBlack";
+        }
+
+        h3 {
+            font-size: 19px;
+            font-family: "MuseoSansLight";
+            margin-bottom: 30px;
+        }
+
+        .b5__sheets {
+            width: 400px;
+            margin: auto;
+
+            .b5__list {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 25px;
+                font-size: 20px;
+                font-family: "MuseoSansBlack";
+                text-align: right;
+
+                .b5__line {
+                    span {
+                        &::after {
+                            content: "";
+                            background-color: @white;
+                            width: 125px;
+                            height: 5px;
+                            display: block;
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+@media (max-width:451px) {
+    .b5 {
+        padding: 50px 0;
+
+
+        .b5__wrapper {
+            width: 400px;
+
+            .b5__sheets {
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .b5 {
+        padding: 50px 0;
+
+
+        .b5__wrapper {
+            width: 400px;
+
+            .b5__sheets {
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .b5 {
+        .b5__wrapper {
+            width: 350px;
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .b5 {
+        .b5__wrapper {
+            width: 280px;
+            .b5__sheets {
+                width: 250px;
+            }
+        }
+    }
+}
